@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/money_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@null"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/money_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="开始时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/no_arrow_right1"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/money_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@id/no_arrow_right1"
+                android:text="04-17 09:00"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+
+            android:id="@+id/money_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@null"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/money_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="结束时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/no_arrow_right2"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/money_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@id/no_arrow_right2"
+                android:text="04-17 18:00"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:id="@+id/money_value_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/line_first"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qingjia"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_show"
+                    android:gravity="center"
+                    android:text="申请请假"
+                    android:textSize="12sp" />
+                <!--<ImageView
+                    android:id="@+id/iv_qingjia"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/select_show"/>-->
+                <TextView
+                    android:id="@+id/tv_tiaoxiu"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_show"
+                    android:gravity="center"
+                    android:text="申请调休"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_zhiban"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_show"
+                    android:gravity="center"
+                    android:text="申请值班"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_second"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_gongan"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="230dp"
+                    android:background="@drawable/select_show"
+                    android:gravity="center"
+                    android:text="外出公干"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/line" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="输入内容"
+            android:imeOptions="actionNext"
+            android:maxLength="250"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/text_gray"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@color/deep_gray" />
+
+        <RelativeLayout
+
+            android:id="@+id/approval_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@null"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="审批人"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/no_arrow_right"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/approval_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@id/no_arrow_right"
+                android:hint="刘晓华"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/receiver_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+
+            android:background="@null"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="通过后通知同事"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/no_arrow_right3"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/approval_people_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@id/no_arrow_right3"
+                android:hint="刘晓华,李婉晴"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/deep_gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/admin_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:text="行政编号"
+                    android:textSize="@dimen/sp_12" />
+
+                <RadioGroup
+
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="普通" />
+
+                    <RadioButton
+                        android:id="@+id/normal_g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加急"
+                        android:textColor="#FEBA00" />
+
+                    <RadioButton
+                        android:id="@+id/normal_g_g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:text="特急"
+                        android:textColor="#FE151A" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <ImageView
+
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+
+                android:layout_height="70dp"
+                android:layout_marginBottom="26dp"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginTop="3dp"
+                android:padding="3dp"
+                android:src="@drawable/button_ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

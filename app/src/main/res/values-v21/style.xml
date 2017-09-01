@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        &lt;!&ndash;<item name="android:statusBarColor">@android:color/transparent</item>&ndash;&gt;
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>-->
+
+    <!--ToolBarTheme样式：（注意，首先，要有个parent，然后actionMenuTextColor前面不能有android前缀，当然在values-v21/styles.xml里是需要添加android前缀的。）-->
+    <style name="ToolbarMenuTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+        <item name="android:textSize">16sp</item> <!--  搞掂字体大小-->
+    </style>
+</resources>
